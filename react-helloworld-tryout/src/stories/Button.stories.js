@@ -34,3 +34,9 @@ Small.args = {
   size: "small",
   label: "Button",
 };
+
+export const ExtraLarge = Template.bind({});
+ExtraLarge.args = {
+  size: "large",
+  label: "hello Extra large",
+};
