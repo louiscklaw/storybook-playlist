@@ -20,7 +20,7 @@
     "build-storybook": "build-storybook -s public",
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "dev": "yarn --dev && yarn storybook",
-    "gitUpdate": "git add . && git commit -m 'update' && git push"
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m 'update' && git push"
   },
   "eslintConfig": {
     "extends": [
