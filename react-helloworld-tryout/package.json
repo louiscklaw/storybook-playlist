@@ -18,6 +18,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "dev": "yarn --dev && yarn storybook",
     "gitUpdate": "git add . && git commit -m 'update' && git push"
   },
@@ -45,6 +46,7 @@
     "@storybook/addon-links": "^6.1.14",
     "@storybook/node-logger": "^6.1.14",
     "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.1.14"
+    "@storybook/react": "^6.1.14",
+    "prettier": "^2.6.2"
   }
 }
