@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import MKBadge from 'components/MKBadge';
-import MKButton from 'components/MKButton';
+import { Button } from '@mui/material';
 import Icon from '@mui/material/Icon';
 import LynkedStyleTable from './LynkedStyleTable';
 
@@ -63,12 +63,12 @@ const table_data = [
     ),
     food_status: (
       <>
-        <MKButton iconOnly size="large">
+        <Button iconOnly size="large">
           <Icon>delete</Icon>
-        </MKButton>
-        <MKButton iconOnly size="large">
+        </Button>
+        <Button iconOnly size="large">
           <Icon>edit</Icon>
-        </MKButton>
+        </Button>
       </>
     ),
   },
@@ -80,12 +80,12 @@ const table_data = [
     employed: '11/01/19',
     food_status: (
       <>
-        <MKButton iconOnly size="large">
+        <Button iconOnly size="large">
           <Icon>delete</Icon>
-        </MKButton>
-        <MKButton iconOnly size="large">
+        </Button>
+        <Button iconOnly size="large">
           <Icon>edit</Icon>
-        </MKButton>
+        </Button>
       </>
     ),
   },
@@ -97,12 +97,12 @@ const table_data = [
     employed: '19/09/17',
     food_status: (
       <>
-        <MKButton iconOnly size="large">
+        <Button iconOnly size="large">
           <Icon>delete</Icon>
-        </MKButton>
-        <MKButton iconOnly size="large">
+        </Button>
+        <Button iconOnly size="large">
           <Icon>edit</Icon>
-        </MKButton>
+        </Button>
       </>
     ),
   },

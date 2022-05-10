@@ -15,7 +15,7 @@ import TableRow from '@mui/material/TableRow';
 // Material Kit 2 PRO React components
 import MKBox from 'components/MKBox';
 import MKAvatar from 'components/MKAvatar';
-import MKTypography from 'components/MKTypography';
+import { Typography } from '@mui/material';
 
 function Table({ columns, rows }) {
   const renderColumns = columns.map(
@@ -89,13 +89,13 @@ function Table({ columns, rows }) {
                   size="sm"
                 />
               </MKBox>
-              <MKTypography
+              <Typography
                 variant="button"
                 fontWeight="medium"
                 sx={{ width: 'max-content' }}
               >
                 {row[name][1]}
-              </MKTypography>
+              </Typography>
             </MKBox>
           </MKBox>
         );
@@ -112,14 +112,14 @@ function Table({ columns, rows }) {
                 : 0,
             })}
           >
-            <MKTypography
+            <Typography
               variant="button"
               fontWeight="regular"
               color="secondary"
               sx={{ display: 'inline-block', width: 'max-content' }}
             >
               {row[name]}
-            </MKTypography>
+            </Typography>
           </MKBox>
         );
       }

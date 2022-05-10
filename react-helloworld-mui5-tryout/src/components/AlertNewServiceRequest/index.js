@@ -1,6 +1,5 @@
 import { Box, Grid, Icon, Typography } from '@mui/material';
-import MKButton from 'components/MKButton';
-
+import { Button } from '@mui/material';
 export default function AlertNewServiceRequest() {
   return (
     <>
@@ -37,7 +36,7 @@ export default function AlertNewServiceRequest() {
         </Box>
 
         <Box>
-          <MKButton size="small">
+          <Button size="small">
             <Typography
               variant="subtitle2"
               sx={({
@@ -50,7 +49,7 @@ export default function AlertNewServiceRequest() {
             >
               OK
             </Typography>
-          </MKButton>
+          </Button>
         </Box>
       </Grid>
     </>

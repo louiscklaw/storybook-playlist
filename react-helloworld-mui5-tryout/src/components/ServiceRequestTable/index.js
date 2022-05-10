@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import MKBadge from 'components/MKBadge';
-import MKButton from 'components/MKButton';
+import { Button } from '@mui/material';
 import { Check } from 'react-feather';
 import LynkedStyleTable from './LynkedStyleTable';
 
@@ -36,11 +36,11 @@ const table_data = [
     status: 1,
     email: '#1',
     food_status: (
-      <MKButton variant="contained" color="success" size={'small'}>
+      <Button variant="contained" size={'small'}>
         <Typography variant="caption" color="#fff">
           確認済み
         </Typography>
-      </MKButton>
+      </Button>
     ),
   },
   {
@@ -49,11 +49,11 @@ const table_data = [
     status: 1,
     email: 'alexa@user.com',
     food_status: (
-      <MKButton variant="contained" color="success" size={'small'}>
+      <Button variant="contained" size={'small'}>
         <Typography variant="caption" color="#fff">
           確認済み
         </Typography>
-      </MKButton>
+      </Button>
     ),
   },
   {
@@ -62,11 +62,11 @@ const table_data = [
     status: 1,
     email: 'laurent@user.com',
     food_status: (
-      <MKButton variant="contained" color="success" size={'small'}>
+      <Button variant="contained" size={'small'}>
         <Typography variant="caption" color="#fff">
           確認済み
         </Typography>
-      </MKButton>
+      </Button>
     ),
   },
 ];

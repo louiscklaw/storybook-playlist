@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material';
-import MKTypography from 'components/MKTypography';
+import { Typography } from '@mui/material';
 
 export default function FoodItem() {
   return (
@@ -13,11 +13,11 @@ export default function FoodItem() {
             flexDirection={'column'}
             sx={{ textAlign: 'left' }}
           >
-            <MKTypography variant={'h6'}>テスト</MKTypography>
-            <MKTypography variant={'caption'} pt={1}>
+            <Typography variant={'h6'}>テスト</Typography>
+            <Typography variant={'caption'} pt={1}>
               注文受付:2022年04月24日
-            </MKTypography>
-            <MKTypography variant={'caption'}>19時23分</MKTypography>
+            </Typography>
+            <Typography variant={'caption'}>19時23分</Typography>
           </Grid>
           <Grid
             item
@@ -26,9 +26,9 @@ export default function FoodItem() {
             justifyContent={'center'}
             alignItems={'center'}
           >
-            <MKTypography variant={'h6'} color="error">
+            <Typography variant={'h6'} color="error">
               ¥1 x 1点
-            </MKTypography>
+            </Typography>
           </Grid>
         </Grid>
       </Box>

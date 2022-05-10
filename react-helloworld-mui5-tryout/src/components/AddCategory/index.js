@@ -1,6 +1,7 @@
 // Material Kit 2 PRO React Examples
 import {
   Box,
+  Button,
   FormControl,
   Grid,
   InputLabel,
@@ -9,8 +10,6 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
 import * as React from 'react';
 import { Save, X } from 'react-feather';
 
@@ -36,7 +35,7 @@ export default () => {
         >
           <Grid container p={4} spacing={2}>
             <Grid item xs={12} container justifyContent="flex-start">
-              <MKTypography variant={'h6'}>カテゴリー追加</MKTypography>
+              <Typography variant={'h6'}>カテゴリー追加</Typography>
             </Grid>
 
             <Grid
@@ -85,24 +84,22 @@ export default () => {
               alignItems="center"
             >
               <Grid item xs={4}>
-                <MKButton variant="contained" color="dark" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <X />
                   </Box>
-                  <Typography variant="subtitle2" color="white">
-                    キャンセル
-                  </Typography>
-                </MKButton>
+                  <Typography variant="subtitle2">キャンセル</Typography>
+                </Button>
               </Grid>
               <Grid item xs={4}>
-                <MKButton variant="contained" color="success" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <Save />
                   </Box>
                   <Typography variant="subtitle2" color="#fff">
                     登録する
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
             </Grid>
           </Grid>

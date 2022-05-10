@@ -12,8 +12,8 @@ import {
 } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
+import { Button } from '@mui/material';
+import { Typography } from '@mui/material';
 import * as React from 'react';
 import { Check, X } from 'react-feather';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -39,9 +39,9 @@ export default function OpenHourEntry({ day_label }) {
           alignItem="center"
           sx={{}}
         >
-          <MKTypography variant={'h6'} opacity={0.8}>
+          <Typography variant={'h6'} opacity={0.8}>
             {day_label}
-          </MKTypography>
+          </Typography>
         </Grid>
         <Grid
           item

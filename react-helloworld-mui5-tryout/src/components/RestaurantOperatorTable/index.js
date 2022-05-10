@@ -1,6 +1,6 @@
 import { Box, Grid, Icon, Typography } from '@mui/material';
 import MKBadge from 'components/MKBadge';
-import MKButton from 'components/MKButton';
+import { Button } from '@mui/material';
 import { Check } from 'react-feather';
 import LynkedStyleTable from './LynkedStyleTable';
 
@@ -38,12 +38,12 @@ const table_data = [
     email: '#1',
     action: (
       <>
-        <MKButton iconOnly size="large">
+        <Button iconOnly size="large">
           <Icon>delete</Icon>
-        </MKButton>
-        <MKButton iconOnly size="large">
+        </Button>
+        <Button iconOnly size="large">
           <Icon>edit</Icon>
-        </MKButton>
+        </Button>
       </>
     ),
   },
@@ -55,12 +55,12 @@ const table_data = [
     email: '#1',
     action: (
       <>
-        <MKButton iconOnly size="large">
+        <Button iconOnly size="large">
           <Icon>delete</Icon>
-        </MKButton>
-        <MKButton iconOnly size="large">
+        </Button>
+        <Button iconOnly size="large">
           <Icon>edit</Icon>
-        </MKButton>
+        </Button>
       </>
     ),
   },
@@ -72,12 +72,12 @@ const table_data = [
     email: '#1',
     action: (
       <>
-        <MKButton iconOnly size="large">
+        <Button iconOnly size="large">
           <Icon>delete</Icon>
-        </MKButton>
-        <MKButton iconOnly size="large">
+        </Button>
+        <Button iconOnly size="large">
           <Icon>edit</Icon>
-        </MKButton>
+        </Button>
       </>
     ),
   },

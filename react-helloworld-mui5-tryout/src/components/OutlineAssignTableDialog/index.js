@@ -1,6 +1,6 @@
 // Material Kit 2 PRO React Examples
 import { Box, Grid, TextField, Typography } from '@mui/material';
-import MKButton from 'components/MKButton';
+import { Button } from '@mui/material';
 import { Check, X } from 'react-feather';
 
 export default () => {
@@ -50,24 +50,20 @@ export default () => {
             alignItems="center"
           >
             <Grid item xs={4}>
-              <MKButton variant="contained" color="dark" fullWidth>
+              <Button variant="contained" fullWidth>
                 <Box mr={1}>
                   <X />
                 </Box>
-                <Typography variant="subtitle2" color="white">
-                  Cancel
-                </Typography>
-              </MKButton>
+                <Typography variant="subtitle2">Cancel</Typography>
+              </Button>
             </Grid>
             <Grid item xs={4}>
-              <MKButton variant="contained" color="success" fullWidth>
+              <Button variant="contained" fullWidth>
                 <Box mr={1}>
                   <Check />
                 </Box>
-                <Typography variant="subtitle2" color="white">
-                  OK
-                </Typography>
-              </MKButton>
+                <Typography variant="subtitle2">OK</Typography>
+              </Button>
             </Grid>
           </Grid>
         </Box>

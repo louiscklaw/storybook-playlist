@@ -1,7 +1,5 @@
 // Material Kit 2 PRO React Examples
-import { Box, Grid, Typography } from '@mui/material';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import { Save, X } from 'react-feather';
 
 export default () => {
@@ -23,13 +21,13 @@ export default () => {
         >
           <Box p={8} pt={4} pb={4}>
             <Box>
-              <MKTypography variant={'h6'}>注意事項</MKTypography>
+              <Typography variant={'h6'}>注意事項</Typography>
             </Box>
 
             <Box pt={2}>
-              <MKTypography variant={'subtitle2'}>
+              <Typography variant={'subtitle2'}>
                 お客様は「営業中」の間は注文することができます。
-              </MKTypography>
+              </Typography>
             </Box>
 
             <Box pt={2}>
@@ -41,24 +39,24 @@ export default () => {
                 alignItems="center"
               >
                 <Grid item xs={5}>
-                  <MKButton variant="contained" color="dark" fullWidth>
+                  <Button variant="contained" fullWidth>
                     <Box mr={1}>
                       <X />
                     </Box>
-                    <Typography variant="subtitle2" color="white" size="small">
+                    <Typography variant="subtitle2" size="small">
                       キャンセル
                     </Typography>
-                  </MKButton>
+                  </Button>
                 </Grid>
                 <Grid item xs={5}>
-                  <MKButton variant="contained" color="success" fullWidth>
+                  <Button variant="contained" fullWidth>
                     <Box mr={1}>
                       <Save />
                     </Box>
-                    <Typography variant="subtitle2" color="white" size="small">
+                    <Typography variant="subtitle2" size="small">
                       OK
                     </Typography>
-                  </MKButton>
+                  </Button>
                 </Grid>
               </Grid>
             </Box>

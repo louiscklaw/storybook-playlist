@@ -1,7 +1,7 @@
-// Material Kit 2 PRO React Examples
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import {
   Box,
+  Button,
   FormControl,
   Grid,
   InputLabel,
@@ -12,8 +12,6 @@ import {
 } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
 import * as React from 'react';
 import { Check, X } from 'react-feather';
 
@@ -43,7 +41,7 @@ export default () => {
         >
           <Grid container p={2} spacing={2}>
             <Grid item xs={12} container justifyContent="flex-start">
-              <MKTypography variant={'h6'}>広告編集</MKTypography>
+              <Typography variant={'h6'}>広告編集</Typography>
             </Grid>
 
             <Grid
@@ -158,24 +156,24 @@ export default () => {
                       multiple
                       type="file"
                     />
-                    <MKButton variant="contained" component="span">
+                    <Button variant="contained" component="span">
                       <Grid container justifyContent={'flex-start'}>
                         <PhotoCamera />
 
-                        <MKTypography
+                        <Typography
                           variant="subtitle2"
                           sx={{ fontSize: '0.8rem', fontWeight: 'bold' }}
                         >
                           画像を追加する
-                        </MKTypography>
-                        <MKTypography
+                        </Typography>
+                        <Typography
                           variant="subtitle2"
                           sx={{ fontSize: '0.8rem' }}
                         >
                           (推奨のサイズは1MB以下(PNG, JPG可))
-                        </MKTypography>
+                        </Typography>
                       </Grid>
-                    </MKButton>
+                    </Button>
                   </label>
                 </Stack>
               </Box>
@@ -190,24 +188,24 @@ export default () => {
               alignItems="center"
             >
               <Grid item xs={5}>
-                <MKButton variant="contained" color="dark" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <X />
                   </Box>
-                  <Typography variant="subtitle2" color="white" size={'small'}>
+                  <Typography variant="subtitle2" size={'small'}>
                     キャンセル
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
               <Grid item xs={5}>
-                <MKButton variant="contained" color="success" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <Check />
                   </Box>
-                  <Typography variant="subtitle2" color="white" size={'small'}>
+                  <Typography variant="subtitle2" size={'small'}>
                     登録する
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
             </Grid>
           </Grid>

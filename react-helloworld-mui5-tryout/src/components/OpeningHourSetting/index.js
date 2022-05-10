@@ -12,8 +12,8 @@ import {
 } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
+import { Button } from '@mui/material';
+import { Typography } from '@mui/material';
 import * as React from 'react';
 import { Check, Save, X } from 'react-feather';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -48,13 +48,9 @@ export default () => {
           p={2}
         >
           <Box sx={{ borderBottom: '1px solid #ccc' }}>
-            <MKTypography
-              variant={'h6'}
-              sx={{ textAlign: 'left' }}
-              opacity={0.8}
-            >
+            <Typography variant={'h6'} sx={{ textAlign: 'left' }} opacity={0.8}>
               営業時間設定
-            </MKTypography>
+            </Typography>
           </Box>
           <Box pt={2}>
             <OpenHourEntry day_label="月" />
@@ -75,24 +71,22 @@ export default () => {
               alignItems="center"
             >
               <Grid item xs={4}>
-                <MKButton variant="contained" color="dark" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <X />
                   </Box>
-                  <Typography variant="subtitle2" color="white">
-                    キャンセル
-                  </Typography>
-                </MKButton>
+                  <Typography variant="subtitle2">キャンセル</Typography>
+                </Button>
               </Grid>
               <Grid item xs={4}>
-                <MKButton variant="contained" color="success" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <Save />
                   </Box>
                   <Typography variant="subtitle2" color="#fff">
                     OK
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
             </Grid>
           </Box>

@@ -1,8 +1,6 @@
 // Material Kit 2 PRO React Examples
-import { Box, Grid, Typography } from '@mui/material';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
-import { Check, Trash2, X } from 'react-feather';
+import { Box, Button, Grid, Typography } from '@mui/material';
+import { Trash2, X } from 'react-feather';
 
 export default () => {
   return (
@@ -23,7 +21,7 @@ export default () => {
         >
           <Box p={8} pt={4} pb={4}>
             <Box>
-              <MKTypography variant={'h6'}>商品削除</MKTypography>
+              <Typography variant={'h6'}>商品削除</Typography>
             </Box>
 
             <Grid
@@ -33,9 +31,9 @@ export default () => {
               justifyContent="center"
               alignItems="center"
             >
-              <MKTypography variant={'subtitle2'} pl={1}>
+              <Typography variant={'subtitle2'} pl={1}>
                 商品を削除しますか？
-              </MKTypography>
+              </Typography>
             </Grid>
 
             <Box pt={2}>
@@ -47,24 +45,22 @@ export default () => {
                 alignItems="center"
               >
                 <Grid item xs={4}>
-                  <MKButton variant="contained" color="dark" fullWidth>
+                  <Button variant="contained" fullWidth>
                     <Box mr={1}>
                       <X />
                     </Box>
-                    <Typography variant="subtitle2" color="white">
-                      キャンセル
-                    </Typography>
-                  </MKButton>
+                    <Typography variant="subtitle2">キャンセル</Typography>
+                  </Button>
                 </Grid>
                 <Grid item xs={4}>
-                  <MKButton variant="contained" color="error" fullWidth>
+                  <Button variant="contained" color="error" fullWidth>
                     <Box mr={1}>
                       <Trash2 />
                     </Box>
                     <Typography variant="subtitle2" color="#fff">
                       削除
                     </Typography>
-                  </MKButton>
+                  </Button>
                 </Grid>
               </Grid>
             </Box>

@@ -8,10 +8,9 @@ import {
   Select,
   TextField,
   Typography,
+  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import MKButton from 'components/MKButton';
-import MKTypography from 'components/MKTypography';
 import * as React from 'react';
 import { UserPlus, X } from 'react-feather';
 
@@ -41,7 +40,7 @@ export default () => {
         >
           <Grid container p={4} spacing={2}>
             <Grid item xs={12} container justifyContent="flex-start">
-              <MKTypography variant={'h6'}>新客戶</MKTypography>
+              <Typography variant={'h6'}>新客戶</Typography>
             </Grid>
 
             <Grid
@@ -108,24 +107,24 @@ export default () => {
               alignItems="center"
             >
               <Grid item xs={5}>
-                <MKButton variant="contained" color="dark" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <X />
                   </Box>
-                  <Typography variant="subtitle2" color="white" size={'small'}>
+                  <Typography variant="subtitle2" size={'small'}>
                     cancel
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
               <Grid item xs={5}>
-                <MKButton variant="contained" color="success" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <UserPlus />
                   </Box>
-                  <Typography variant="subtitle2" color="white" size={'small'}>
+                  <Typography variant="subtitle2" size={'small'}>
                     add user
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
             </Grid>
           </Grid>

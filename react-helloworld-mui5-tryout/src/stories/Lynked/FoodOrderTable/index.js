@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import AlertNewServieRequest from '../../../components/Lynked/AlertNewServiceRequest';
+import AlertNewServieRequest from '../../../components/Lynked/AlertNewServieRequest';
 
 export const SBOutlineFood = ({
   primary,

@@ -1,6 +1,4 @@
-// Material Kit 2 PRO React Examples
 import {
-  Typography,
   Box,
   FormControl,
   Grid,
@@ -8,13 +6,13 @@ import {
   MenuItem,
   Select,
   TextField,
+  Typography,
+  Button,
 } from '@mui/material';
 import Chip from '@mui/material/Chip';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { useTheme } from '@mui/material/styles';
-import MKTypography from 'components/MKTypography';
 import * as React from 'react';
-import MKButton from 'components/MKButton';
 import { UserPlus, X } from 'react-feather';
 
 const ITEM_HEIGHT = 48;
@@ -68,8 +66,7 @@ export default () => {
 
   return (
     <>
-      AddRestaurant
-      <Box p={2}>
+      <Box p={2} sx={{ maxWidth: '800px', width: '50vw' }}>
         <Box
           sx={{
             borderLeft: '8px solid #263238',
@@ -81,12 +78,13 @@ export default () => {
         >
           <Grid container p={4} spacing={2}>
             <Grid item xs={12} container justifyContent="flex-start">
-              <MKTypography variant={'h6'}>Add Restaurant</MKTypography>
+              <Typography variant={'h6'}>Add Restaurant</Typography>
             </Grid>
 
             <Grid
               item
-              xs={4}
+              xs={12}
+              lg={4}
               container
               justifyContent="center"
               alignItems="center"
@@ -97,7 +95,8 @@ export default () => {
 
             <Grid
               item
-              xs={4}
+              xs={12}
+              lg={4}
               container
               justifyContent="center"
               alignItems="center"
@@ -125,13 +124,14 @@ export default () => {
 
             <Grid
               item
-              xs={4}
+              xs={12}
+              lg={4}
               container
               justifyContent="center"
               alignItems="center"
             >
               <FormControl sx={{ width: 300, height: '100%' }}>
-                <InputLabel id="demo-multiple-chip-label">Chip</InputLabel>
+                <InputLabel id="demo-multiple-chip-label">test chip</InputLabel>
                 <Select
                   labelId="demo-multiple-chip-label"
                   id="demo-multiple-chip"
@@ -173,24 +173,24 @@ export default () => {
               alignItems="center"
             >
               <Grid item xs={5}>
-                <MKButton variant="contained" color="dark" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <X />
                   </Box>
-                  <Typography variant="subtitle2" color="white" size={'small'}>
+                  <Typography variant="subtitle2" size={'small'}>
                     cancel
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
               <Grid item xs={5}>
-                <MKButton variant="contained" color="success" fullWidth>
+                <Button variant="contained" fullWidth>
                   <Box mr={1}>
                     <UserPlus />
                   </Box>
                   <Typography variant="subtitle2" color="#fff" size={'small'}>
                     add user
                   </Typography>
-                </MKButton>
+                </Button>
               </Grid>
             </Grid>
           </Grid>

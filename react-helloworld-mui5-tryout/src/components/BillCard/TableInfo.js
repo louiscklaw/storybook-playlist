@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
-import MKTypography from 'components/MKTypography';
-import MKButton from 'components/MKButton';
+import { Typography } from '@mui/material';
+import { Button } from '@mui/material';
 import { Check, X } from 'react-feather';
 
 export default function TableInfo() {
@@ -66,7 +66,7 @@ export default function TableInfo() {
 
           <Grid container spacing={2} pt={2}>
             <Grid item xs={6}>
-              <MKButton variant="contained" color="dark" fullWidth>
+              <Button variant="contained" fullWidth>
                 <Box mr={1}>
                   <X />
                 </Box>
@@ -77,10 +77,10 @@ export default function TableInfo() {
                 >
                   全て見る
                 </Typography>
-              </MKButton>
+              </Button>
             </Grid>
             <Grid item xs={6}>
-              <MKButton variant="contained" color="error" fullWidth>
+              <Button variant="contained" color="error" fullWidth>
                 <Box mr={1}>
                   <Check />
                 </Box>
@@ -91,7 +91,7 @@ export default function TableInfo() {
                 >
                   会計完了
                 </Typography>
-              </MKButton>
+              </Button>
             </Grid>
           </Grid>
         </Grid>

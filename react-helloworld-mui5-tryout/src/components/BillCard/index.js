@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
-import MKTypography from 'components/MKTypography';
-import MKButton from 'components/MKButton';
+import { Typography } from '@mui/material';
+import { Button } from '@mui/material';
 import { Check, X } from 'react-feather';
 
 import FoodItem from './FoodItem';

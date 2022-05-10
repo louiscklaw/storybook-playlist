@@ -1,6 +1,6 @@
 // Material Kit 2 PRO React Examples
 import { Box, Grid, Typography } from '@mui/material';
-import MKButton from 'components/MKButton';
+import { Button } from '@mui/material';
 import { useMemo } from 'react';
 
 export default () => {
@@ -55,7 +55,7 @@ export default () => {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <MKButton
+                  <Button
                     sx={{
                       width: '100%',
                       height: '100%',
@@ -64,7 +64,7 @@ export default () => {
                     color="success"
                   >
                     <Typography variant="subtitle2">完了</Typography>
-                  </MKButton>
+                  </Button>
                 </Grid>
               </Grid>
             </Grid>

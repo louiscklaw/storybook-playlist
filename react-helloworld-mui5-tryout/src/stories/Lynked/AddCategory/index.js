@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import AlertNewServieRequest from '../../../components/Lynked/AlertNewServiceRequest';
+import AddCategory from '../../../components/AddCategory';
 
 export const SBOutlineFood = ({
   primary,
@@ -10,7 +10,7 @@ export const SBOutlineFood = ({
   price,
   ...props
 }) => {
-  return <AlertNewServieRequest {...props} />;
+  return <AddCategory {...props} />;
 };
 
 SBOutlineFood.propTypes = {

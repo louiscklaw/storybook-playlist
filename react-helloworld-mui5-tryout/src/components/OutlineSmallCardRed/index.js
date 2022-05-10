@@ -1,7 +1,7 @@
 // Material Kit 2 PRO React Examples
 import { useContext } from 'react';
 import { TestContext } from '../TestContext';
-import MKButton from 'components/MKButton';
+import { Button } from '@mui/material';
 import { Typography, Button, Grid, Box } from '@mui/material';
 import Icon from '@mui/material/Icon';
 
@@ -48,7 +48,7 @@ export default () => {
                 justifyContent="center"
                 alignItems="center"
               >
-                <MKButton
+                <Button
                   sx={{
                     width: '100%',
                     height: '100%',
@@ -57,7 +57,7 @@ export default () => {
                   color="success"
                 >
                   <Typography variant="subtitle2">完了</Typography>
-                </MKButton>
+                </Button>
               </Grid>
             </Grid>
           </Grid>

@@ -1,13 +1,7 @@
 // Material Kit 2 PRO React Examples
-import { useContext } from 'react';
-import { TestContext } from '../../TestContext';
-import MKButton from 'components/MKButton';
-import { Typography, Button, Grid, Box, TextField } from '@mui/material';
-import Icon from '@mui/material/Icon';
-
-import { Save, X } from 'react-feather';
-import MKTypography from 'components/MKTypography';
 import FeedbackIcon from '@mui/icons-material/Feedback';
+import { Box, Button, Grid, Typography } from '@mui/material';
+
 export default () => {
   return (
     <>
@@ -27,7 +21,7 @@ export default () => {
         >
           <Box p={8} pt={4} pb={4}>
             <Box>
-              <MKTypography variant={'h6'}>注意事項</MKTypography>
+              <Typography variant={'h6'}>注意事項</Typography>
             </Box>
 
             <Grid
@@ -38,15 +32,15 @@ export default () => {
               alignItems="center"
             >
               <FeedbackIcon />
-              <MKTypography variant={'subtitle2'} pl={1}>
+              <Typography variant={'subtitle2'} pl={1}>
                 お客様は「準備中」の間はご注文頂けません。
-              </MKTypography>
+              </Typography>
             </Grid>
 
             <Box pt={2}>
-              <MKTypography variant={'body2'}>
+              <Typography variant={'body2'}>
                 ※次の指定した営業開始時間から注文することができます。
-              </MKTypography>
+              </Typography>
             </Box>
 
             <Box pt={2}>
@@ -58,19 +52,12 @@ export default () => {
                 alignItems="center"
               >
                 <Grid item xs={5}>
-                  <MKButton
-                    variant="contained"
-                    color="dark"
-                    fullWidth
-                    size="small"
-                  >
-                    <Typography variant="subtitle2" color="white">
-                      キャンセル
-                    </Typography>
-                  </MKButton>
+                  <Button variant="contained" fullWidth size="small">
+                    <Typography variant="subtitle2">キャンセル</Typography>
+                  </Button>
                 </Grid>
                 <Grid item xs={5}>
-                  <MKButton
+                  <Button
                     variant="contained"
                     color="error"
                     fullWidth
@@ -79,7 +66,7 @@ export default () => {
                     <Typography variant="subtitle2" color="#fff">
                       OK
                     </Typography>
-                  </MKButton>
+                  </Button>
                 </Grid>
               </Grid>
             </Box>
