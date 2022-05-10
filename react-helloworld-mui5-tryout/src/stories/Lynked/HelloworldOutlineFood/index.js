@@ -6,7 +6,7 @@ import {
   OutlineFood,
   RedOutlineFood,
   BlueOutlineFood,
-} from '../../components/HelloworldOutlineFood';
+} from '../../../components/HelloworldOutlineFood';
 
 export const SBOutlineFood = ({
   primary,
