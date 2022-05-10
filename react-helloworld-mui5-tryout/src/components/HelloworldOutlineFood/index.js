@@ -28,7 +28,12 @@ const OutlineFood = ({ bar_color, food_name, food_description, price }) => {
                   <Avatar
                     alt="Remy Sharp"
                     src="/static/images/avatar/1.jpg"
-                    sx={{ width: '5vw', height: '5vw' }}
+                    sx={{
+                      width: '5vw',
+                      height: '5vw',
+                      maxWidth: 33,
+                      maxHeight: 33,
+                    }}
                   />
                 </Grid>
                 <Grid item>

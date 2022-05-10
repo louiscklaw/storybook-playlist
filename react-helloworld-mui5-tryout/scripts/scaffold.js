@@ -3,37 +3,36 @@ const path = require('path');
 const child_process = require('child_process');
 
 let list_test_component = [
-  'MarkDownRenderer',
-  'MiniVariantDrawer',
-  'Drawers',
-  'MKTypography',
-  'MKInput',
-  'BackgroundCards',
-  'BlogCards',
-  'BookingCards',
-  'Breadcrumbs',
-  'InfoCards',
-  'MKDatePicker',
-  'PricingCards',
-  'MKAvatar',
-  'MKBadge',
-  'ReviewCards',
-  'CounterCards',
-  'MKAlert',
-  'MKBox',
-  'MKButton',
-  'MKPagination',
-  'MKProgress',
-  'MKSnackbar',
-  'MKSocialButton',
-  'RotatingCard',
-  'Stepper',
-  'Table',
-  'TeamCards',
+  'OutlinedRed',
+  'OutlinedBlue',
+  'OutlineAssignTableDialog',
+  'OutlineSmallWaitingServiceCard',
+  'OutlineSmallWaitingTableCard',
+  'ChangeRestaurantOpen',
+  'ChangeRestaurantClosed',
+  'AddCategory',
+  'TestSelect',
+  'AddFood',
+  'DeleteCategory',
+  'DeleteFood',
+  'BillCard',
+  'FoodOrderTable',
+  'ServiceRequestTable',
+  'LandingPageSetting',
+  'OpeningHourSetting',
+  'AdvertisementTable',
+  'EditAdvertisement',
+  'DeleteAdvertisement',
+  'AddRestaurantOperator',
+  'RestaurantOperatorTable',
+  'AddRestaurant',
+  'RestaurantTable',
+  'AdminDeleteRestaurant',
+  'AlertNewServiceRequest',
 ];
 
 let dest_component_basepath = 'src/stories/Lynked';
-let source_component = 'src/stories/Lynked/OutlineFood';
+let source_component = 'src/stories/Lynked/AlertNewSservieRequest';
 
 for (let i = 0; i < list_test_component.length; i++) {
   let dest_component_path = `${dest_component_basepath}/${list_test_component[i]}`;
@@ -49,7 +48,10 @@ for (let i = 0; i < list_test_component.length; i++) {
     index_stories_js,
     fs
       .readFileSync(index_stories_js, { encoding: 'utf-8' })
-      .replace('Lynked/OutlineFood', `Lynked/${list_test_component[i]}`),
+      .replace(
+        `Lynked/${'AlertNewSservieRequest'}`,
+        `Lynked/${list_test_component[i]}`
+      ),
     { encoding: 'utf-8' }
   );
 }
