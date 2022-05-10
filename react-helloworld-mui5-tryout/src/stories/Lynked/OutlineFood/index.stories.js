@@ -3,7 +3,7 @@ import React from 'react';
 import { SBOutlineFood } from './index';
 
 export default {
-  title: 'Lynked/HelloworldOutlineFood',
+  title: 'Lynked/OutlineFood',
   component: SBOutlineFood,
 };
 
