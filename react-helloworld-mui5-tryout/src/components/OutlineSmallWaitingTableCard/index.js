@@ -8,7 +8,6 @@ export default () => {
       <>
         <Grid container>
           <Grid item xs={12} xl={4}></Grid>
-          <>OutlineSmallWaitingTableCard</>
           <Grid
             sx={{
               borderRadius: '8px',
