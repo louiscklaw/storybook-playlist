@@ -80,18 +80,20 @@ export default function TableInfo() {
 const SeeAllItems = () => {
   let { palette } = useTheme();
   return (
-    <Button variant="contained" fullWidth>
-      <Box mr={1}>
-        <X />
-      </Box>
-      <Typography
-        variant="subtitle2"
-        color={palette.primary.contrastText}
-        sx={{ fontSize: '0.8rem' }}
-      >
-        全て見る
-      </Typography>
-    </Button>
+    <>
+      <Button variant="contained" fullWidth>
+        <Box mr={1}>
+          <X />
+        </Box>
+        <Typography
+          variant="subtitle2"
+          // color={palette.button_black.contrastText}
+          sx={{ fontSize: '0.8rem' }}
+        >
+          全て見る
+        </Typography>
+      </Button>
+    </>
   );
 };
 

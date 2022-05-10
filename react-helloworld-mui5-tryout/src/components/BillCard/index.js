@@ -1,8 +1,9 @@
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, useTheme } from '@mui/material';
 import FoodItem from './FoodItem';
 import TableInfo from './TableInfo';
 
 export default () => {
+  let { palette } = useTheme();
   return (
     <>
       <Box p={2} sx={{ maxWidth: '800px' }}>
@@ -34,6 +35,7 @@ export default () => {
           </Grid>
         </Grid>
       </Box>
+      <pre>{JSON.stringify(palette, null, 2)}</pre>
     </>
   );
 };

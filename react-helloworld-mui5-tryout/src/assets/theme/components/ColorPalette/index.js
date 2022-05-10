@@ -19,10 +19,10 @@ export default function ColorPalette() {
       <Box sx={{ backgroundColor: '#8e44ad', width: 100, height: 100 }}></Box>
       <Box sx={{ backgroundColor: '#ecf0f1', width: 100, height: 100 }}></Box>
       <Box sx={{ backgroundColor: '#bdc3c7', width: 100, height: 100 }}></Box>
-      <Box sx={{ backgroundColor: '#34495e', width: 100, height: 100 }}></Box>
-      <Box sx={{ backgroundColor: '#2c3e50', width: 100, height: 100 }}></Box>
       <Box sx={{ backgroundColor: '#95a5a6', width: 100, height: 100 }}></Box>
       <Box sx={{ backgroundColor: '#7f8c8d', width: 100, height: 100 }}></Box>
+      <Box sx={{ backgroundColor: '#2c3e50', width: 100, height: 100 }}></Box>
+      <Box sx={{ backgroundColor: '#34495e', width: 100, height: 100 }}></Box>
     </>
   );
 }

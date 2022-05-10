@@ -10,7 +10,10 @@ import reportWebVitals from './reportWebVitals';
 
 const Index = () => {
   let theme = createTheme(base_theme, {
-    palette: { primary: { main: '#192a56', contrastText: '#fff' } },
+    palette: {
+      primary: { main: '#192a56', contrastText: '#ecf0f1' },
+      button_black: { main: '#2c3e50', constrastText: '#ecf0f1' },
+    },
   });
   return (
     <>
