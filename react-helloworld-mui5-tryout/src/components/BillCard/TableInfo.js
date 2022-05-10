@@ -1,14 +1,13 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { Typography } from '@mui/material';
-import { Button } from '@mui/material';
+import { Box, Button, Grid, Typography, useTheme } from '@mui/material';
 import { Check, X } from 'react-feather';
 
 export default function TableInfo() {
+  let { palette } = useTheme();
   return (
     <>
       <Grid
         container
-        sx={{ borderLeft: '1px solid #eee', height: '100%' }}
+        sx={{ borderLeft: '1px solid #eee', height: '100%', width: '100%' }}
         pl={1}
         flexDirection={'column'}
         justifyContent={'space-between'}
@@ -66,32 +65,10 @@ export default function TableInfo() {
 
           <Grid container spacing={2} pt={2}>
             <Grid item xs={6}>
-              <Button variant="contained" fullWidth>
-                <Box mr={1}>
-                  <X />
-                </Box>
-                <Typography
-                  variant="subtitle2"
-                  color="#eee"
-                  sx={{ fontSize: '0.8rem' }}
-                >
-                  全て見る
-                </Typography>
-              </Button>
+              <SeeAllItems />
             </Grid>
             <Grid item xs={6}>
-              <Button variant="contained" color="error" fullWidth>
-                <Box mr={1}>
-                  <Check />
-                </Box>
-                <Typography
-                  variant="subtitle2"
-                  color="#eee"
-                  sx={{ fontSize: '0.8rem' }}
-                >
-                  会計完了
-                </Typography>
-              </Button>
+              <CompleteBill />
             </Grid>
           </Grid>
         </Grid>
@@ -99,3 +76,39 @@ export default function TableInfo() {
     </>
   );
 }
+
+const SeeAllItems = () => {
+  let { palette } = useTheme();
+  return (
+    <Button variant="contained" fullWidth>
+      <Box mr={1}>
+        <X />
+      </Box>
+      <Typography
+        variant="subtitle2"
+        color={palette.primary.contrastText}
+        sx={{ fontSize: '0.8rem' }}
+      >
+        全て見る
+      </Typography>
+    </Button>
+  );
+};
+
+const CompleteBill = () => {
+  let { palette } = useTheme();
+  return (
+    <Button variant="contained" color="error" fullWidth>
+      <Box mr={1}>
+        <Check />
+      </Box>
+      <Typography
+        variant="subtitle2"
+        color={palette.primary.contrastText}
+        sx={{ fontSize: '0.8rem' }}
+      >
+        会計完了
+      </Typography>
+    </Button>
+  );
+};

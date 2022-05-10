@@ -1,16 +1,11 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { Typography } from '@mui/material';
-import { Button } from '@mui/material';
-import { Check, X } from 'react-feather';
-
+import { Box, Grid } from '@mui/material';
 import FoodItem from './FoodItem';
 import TableInfo from './TableInfo';
 
 export default () => {
   return (
     <>
-      BillCard
-      <Box p={2}>
+      <Box p={2} sx={{ maxWidth: '800px' }}>
         <Grid
           sx={{
             borderLeft: '8px solid #192a56',

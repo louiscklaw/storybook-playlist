@@ -1,21 +1,56 @@
-import { Grid } from '@mui/material';
-import MKBadge from 'components/MKBadge';
-import LynkedStyleTable from './LynkedStyleTable';
+import * as React from 'react';
+import { Chip } from '@mui/material';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
-export default function FoodOrderTable() {
+function createData(name, calories, fat, carbs, protein) {
+  return { name, calories, fat, carbs, protein };
+}
+
+const rows = [
+  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
+  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
+  createData('Eclair', 262, 16.0, 24, 6.0),
+  createData('Cupcake', 305, 3.7, 67, 4.3),
+  createData('Gingerbread', 356, 16.0, 49, 3.9),
+];
+
+export default function BasicTable() {
   return (
-    <>
-      <Grid container spacing={2}>
-        <Grid item xs={12}>
-          FoodOrderTable
-        </Grid>
-      </Grid>
-      <Grid container spacing={2}>
-        <Grid item xs={12} lg={12}>
-          <LynkedStyleTable columns={column_name} rows={table_data} />
-        </Grid>
-      </Grid>
-    </>
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Calories</TableCell>
+            <TableCell align="right">Fat&nbsp;(g)</TableCell>
+            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow
+              key={row.name}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
   );
 }
 
@@ -36,7 +71,7 @@ const table_data = [
     email: '#1',
     employed: '04月24日 19時23分',
     food_status: (
-      <MKBadge
+      <Chip
         variant="contained"
         badgeContent="準備中"
         color="warning"
@@ -52,7 +87,7 @@ const table_data = [
     email: 'alexa@user.com',
     employed: '11/01/19',
     food_status: (
-      <MKBadge
+      <Chip
         variant="contained"
         badgeContent="準備中"
         color="primary"
@@ -68,7 +103,7 @@ const table_data = [
     email: 'laurent@user.com',
     employed: '19/09/17',
     food_status: (
-      <MKBadge
+      <Chip
         variant="contained"
         badgeContent="準備中"
         color="primary"

@@ -35,7 +35,7 @@ function Table({ columns, rows }) {
       }
 
       return (
-        <MKBox
+        <Box
           key={name}
           component="th"
           width={width || 'auto'}
@@ -57,7 +57,7 @@ function Table({ columns, rows }) {
           })}
         >
           {column_text.toUpperCase()}
-        </MKBox>
+        </Box>
       );
     }
   );
@@ -70,7 +70,7 @@ function Table({ columns, rows }) {
 
       if (Array.isArray(row[name])) {
         template = (
-          <MKBox
+          <Box
             key={uuidv4()}
             component="td"
             p={1}
@@ -80,15 +80,15 @@ function Table({ columns, rows }) {
                 : 0,
             })}
           >
-            <MKBox display="flex" alignItems="center" py={0.5} px={1}>
-              <MKBox mr={2}>
-                <MKAvatar
+            <Box display="flex" alignItems="center" py={0.5} px={1}>
+              <Box mr={2}>
+                <Avatar
                   src={row[name][0]}
                   name={row[name][1]}
                   variant="rounded"
                   size="sm"
                 />
-              </MKBox>
+              </Box>
               <Typography
                 variant="button"
                 fontWeight="medium"
@@ -96,12 +96,12 @@ function Table({ columns, rows }) {
               >
                 {row[name][1]}
               </Typography>
-            </MKBox>
-          </MKBox>
+            </Box>
+          </Box>
         );
       } else {
         template = (
-          <MKBox
+          <Box
             key={uuidv4()}
             component="td"
             p={1}
@@ -120,7 +120,7 @@ function Table({ columns, rows }) {
             >
               {row[name]}
             </Typography>
-          </MKBox>
+          </Box>
         );
       }
 
@@ -134,9 +134,9 @@ function Table({ columns, rows }) {
     () => (
       <TableContainer>
         <MuiTable>
-          <MKBox component="thead">
+          <Box component="thead">
             <TableRow>{renderColumns}</TableRow>
-          </MKBox>
+          </Box>
           <TableBody>{renderRows}</TableBody>
         </MuiTable>
       </TableContainer>
