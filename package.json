@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "new_helloworld": "pushd react-helloworld-tryout && rm -rf node_modules && popd && rsync -avzh react-helloworld-tryout ",
-    "gitUpdate":"git add . && git commit -m 'update' && git push"
+    "new_helloworld": "pushd react-helloworld-tryout && rm -rf node_modules && popd && rsync -avzh react-helloworld-tryout/ ",
+    "gitUpdate": "git add . && git commit -m 'update' && git push"
   },
   "repository": {
     "type": "git",
