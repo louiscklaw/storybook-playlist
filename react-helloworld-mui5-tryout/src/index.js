@@ -12,7 +12,19 @@ const Index = () => {
   let theme = createTheme(base_theme, {
     palette: {
       primary: { main: '#192a56', contrastText: '#ecf0f1' },
-      button_black: { main: '#2c3e50', constrastText: '#ecf0f1' },
+      button_black: {
+        light: '#2c3e50',
+        dark: '#2c3e50',
+        main: '#2c3e50',
+        contrastText: '#ecf0f1',
+      },
+
+      error: {
+        light: '#2c3e50',
+        dark: '#2c3e50',
+        main: '#2c3e50',
+        contrastText: '#ecf0f1',
+      },  
     },
   });
   return (

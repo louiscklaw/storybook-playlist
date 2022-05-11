@@ -1,12 +1,16 @@
-import { Box, Grid, useTheme } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
+import MKTypography from 'components/MKTypography';
+import MKButton from 'components/MKButton';
+import { Check, X } from 'react-feather';
+
 import FoodItem from './FoodItem';
 import TableInfo from './TableInfo';
 
 export default () => {
-  let { palette } = useTheme();
   return (
     <>
-      <Box p={2} sx={{ maxWidth: '800px' }}>
+      BillCard
+      <Box p={2}>
         <Grid
           sx={{
             borderLeft: '8px solid #192a56',
@@ -17,8 +21,7 @@ export default () => {
           }}
           container
           justifyContent="space-between"
-          p={2}
-        >
+          p={2}>
           <Grid item xs={6}>
             <FoodItem />
             <FoodItem />
@@ -29,13 +32,11 @@ export default () => {
             xs={6}
             container
             flexDirection={'column'}
-            justifyContent={'flex-start'}
-          >
+            justifyContent={'flex-start'}>
             <TableInfo />
           </Grid>
         </Grid>
       </Box>
-      <pre>{JSON.stringify(palette, null, 2)}</pre>
     </>
   );
 };

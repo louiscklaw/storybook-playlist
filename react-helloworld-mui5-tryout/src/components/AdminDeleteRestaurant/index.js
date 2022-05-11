@@ -1,4 +1,5 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid } from '@mui/material';
+import MKTypography from '../MKTypography';
 import CancelButton from '../CancelButton';
 import DeleteButton from '../DeleteButton';
 
@@ -6,7 +7,8 @@ export default () => {
   const handleDeleteOnClick = () => alert('delete onclick');
   return (
     <>
-      <Box p={2} sx={{ maxWidth: '500px', width: '50vw' }}>
+      AdminDeleteRestaurant
+      <Box p={2}>
         <Box
           sx={{
             borderLeft: '8px solid #800000',
@@ -17,20 +19,19 @@ export default () => {
           }}
           container
           justifyContent="center"
-          alignItems="center"
-        >
+          alignItems="center">
           <Box p={4}>
             <Box>
-              <Typography variant={'h6'}>レストランを削除する</Typography>
+              <MKTypography variant={'h6'}>レストランを削除する</MKTypography>
             </Box>
+
             <Box pt={2}>
               <Grid
                 container
                 justifyContent="space-between"
                 mt={3}
                 mb={3}
-                alignItems="center"
-              >
+                alignItems="center">
                 <Grid item xs={5}>
                   <CancelButton />
                 </Grid>

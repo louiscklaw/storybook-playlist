@@ -1,0 +1,22 @@
+{
+  "name": "storybook-playlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new_helloworld": "pushd react-helloworld-tryout && rm -rf node_modules && popd && rsync -avzh react-helloworld-tryout ",
+    "gitUpdate":"git add . && git commit -m 'update' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiscklaw/storybook-playlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louiscklaw/storybook-playlist/issues"
+  },
+  "homepage": "https://github.com/louiscklaw/storybook-playlist#readme"
+}
