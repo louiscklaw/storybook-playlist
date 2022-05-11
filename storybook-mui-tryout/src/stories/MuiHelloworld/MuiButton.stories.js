@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from './MuiButton';
 
 export default {
-  title: 'Example/MuiButton',
+  title: 'Example/MuiHelloworld/MuiButton',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
